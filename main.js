@@ -17,7 +17,7 @@ function modelLoaded() {
  console.log('poseNet foi inicializado');
 }
  function gotPoses(results) {
- if (results.lenght<0) {
+ if (results.lenght>0) {
     console.log(results);
     noseX = results[0].pose.nose.x;
     noseY = results[0].pose.nose.y;
